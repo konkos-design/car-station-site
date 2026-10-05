@@ -1,0 +1,51 @@
+/* Real Google Maps reviews of Car Station – GBC Mechanic Shop (collected Oct 2026).
+   Text kept as written by the reviewers; names shortened to first name + initial. */
+window.FEATURED = [
+  {n:"Konrad W.", t:"pink", x:"Dealt with Andisheh for a pink slip. I am very wary of going to a new mechanic, he was transparent with the issues with the car and took me out the back to explain to a non-gear head like me what was wrong. Going to be coming back here as long as Andy is around!"},
+  {n:"Arastoo T.", t:"svc", x:"Finding an honest mechanic is tough, but these guys are the real deal. They diagnosed the issue quickly, gave me a fair price, and didn't try to upsell me on unnecessary fixes. I got my car back exactly when promised."},
+  {n:"Phong P.", t:"blue", x:"I'm not joking, this is the best service I've had in a while. Quickest blue slip ever. Took about 15 minutes and I was back out the door. I also went and got pink slip here too, also very fast!!!!"},
+  {n:"James L.", t:"blue", x:"Great local, family-run workshop. During the inspection, they also found that my previous mechanic had installed a battery that wasn't the correct size for my car. They replaced it with a proper one, and the price was very reasonable."},
+  {n:"Antar R.", t:"svc", x:"Got a service done on my Skoda. The brake piston was stuck and they couldn't get the new pads inserted. Instead of making a fuss, stuck with it for an extra couple of hours and made sure it was done. No demand for extra payments or excuses."},
+  {n:"Sivaram S.", t:"blue", x:"Within 1.5 hrs, the inspection is done. They are the subject matter experts. Honest on the inspection and even pointed out the yellow tinge on the headlights and fixed them for a small fee. Super helpful and I recommend them for blue slip."}
+];
+
+window.REVIEWS = [
+  {n:"Hirra K.", t:"blue", x:"The team was incredibly friendly, kind and helpful from start to finish. Made the whole process so easy. We went in for a blue slip and tyre change and received excellent service throughout. You can tell they genuinely care about their customers."},
+  {n:"Ayu R.", t:"pink", x:"I came here for a pink slip and had a great experience. The staff were very friendly and the service was super quick!! The pricing was fair and reasonable too. Highly recommend this place if you need a fast and reliable inspection 😉"},
+  {n:"Tara B.", t:"svc", x:"The staff were friendly, professional, and honest, and they explained everything clearly before doing the work. The service was quick, the price was reasonable, and my car was running perfectly afterwards."},
+  {n:"C. W.", t:"blue", x:"Had my Blue Slip inspection done here for a recently purchased interstate vehicle. The inspector was thorough but efficient, and even went out of his way to replace my wiper blades. Really appreciated the attention to detail and the friendly service."},
+  {n:"Jo M.", t:"svc", x:"Andy was incredibly friendly, professional, and helpful throughout the entire process. He even polished out some scratches at no extra cost. Since we weren't familiar with the registration process, he patiently guided us through every step."},
+  {n:"Sachin V.", t:"svc", x:"I recently had my Mercedes serviced here and I couldn't be happier. Andy did an absolutely perfect job — his attention to detail and expertise really stood out. It's not easy to find a mechanic you can fully trust, but this place definitely delivers."},
+  {n:"Vincent G.", t:"blue", x:"They helped me out with a blue slip inspection for my Jeep and made the whole process easy. They were friendly, explained everything clearly and got it sorted without any mucking around, especially as I needed to get the car registered quickly."},
+  {n:"Luke G.", t:"pink", x:"They managed to fit me in at very short notice for a pink slip, which I really appreciated. Everyone was extremely friendly, professional and easy to deal with from start to finish. Would definitely recommend them and will happily come back."},
+  {n:"Fion C.", t:"svc", x:"Highly recommend Andy and his crew — he fixed my Hyundai promptly. Hyundai gave me a ridiculous quote and I got referred to Andy who gave me a more reasonable quote. He was very professional and answered all my questions promptly."},
+  {n:"Karamo S.", t:"blue", x:"Had my blue slip inspection done by Andy today and couldn't be happier. He was thorough, professional, and took the time to properly inspect the vehicle while explaining anything that needed attention. It's clear he takes pride in his work."},
+  {n:"Ellie P.", t:"pink", x:"Great place to go for a pink slip. They were able to fit me in last minute, very quick at conducting the inspection and are reasonably priced. The employees there are amazing people and easy to talk to."},
+  {n:"Shiva M.", t:"svc", x:"He carefully inspected my car, accurately identified the issues, explained them clearly, and fixed everything efficiently. I also went to him for an oil change, which was handled professionally."},
+  {n:"Peter P.", t:"svc", x:"Andy was very accommodating and friendly. He demonstrated the integrity and professionalism of a great mechanic, taking the time to thoroughly inspect the car and explain everything clearly."},
+  {n:"Who W.", t:"blue", x:"Lovely people. So helpful and knowledgeable. I came in last minute at the end of the day — they fixed everything I didn't think was able to be fixed. And blue slip done!"},
+  {n:"Kisa", t:"blue", x:"They even offer same-day appointments for Blue Slip on Saturdays! So friendly and fast!!! Very smooth experience, highly recommended!"},
+  {n:"Ante M.", t:"pink", x:"Andy was exceptional. I gave him a call about my pink slip and he told me I could come right away. The process was quick and easy and his customer service was amazing. 10/10 would come back again."},
+  {n:"BK C.", t:"svc", x:"Friendly service. Honest price. My regular mechanic from now. Thanks Andy and team."},
+  {n:"Binoo T.", t:"pink", x:"Andy was really helpful, quickly did the tests and checked everything. Went there after work and didn't even wait 30 minutes. Would recommend."},
+  {n:"Andrew L.", t:"pink", x:"Came for a pink slip. Quick, smooth and easy. Andy was helpful and provided plenty of service and maintenance recommendations."},
+  {n:"Naveed A.", t:"blue", x:"Andy was outstanding. I needed a blue slip, and he fit me into his busy schedule. The process was fast and straightforward, and his customer service was fantastic."},
+  {n:"Kenneth B.", t:"svc", x:"Excellent servicing done by Andy. It was my first time and he made the entire process seamless and welcoming."},
+  {n:"Yoriichi", t:"svc", x:"Really happy with the service! They quickly diagnosed the issue and fixed it without any hassle. Fair pricing and very friendly staff. Will definitely come back again."},
+  {n:"Lisona T.", t:"pink", x:"Great bunch of people, very friendly and superb service. Got a last min booking and they were all over it. Thank you guys, definitely recommended 👍🏼"},
+  {n:"Atanas N.", t:"blue", x:"Got my blue slip from Andy at Car Station. Absolutely fantastic experience. Very knowledgeable and helpful. Would recommend to anyone looking for a mechanic/blue slip."},
+  {n:"Arjun D.", t:"pink", x:"Was able to give me an appointment promptly. Andy is very friendly and gave me some good tips and things to watch out for in my car."},
+  {n:"Sai M.", t:"pink", x:"Andy was very easy to deal with. He told me to change a tyre because it was worn out. He did my pink slip after that."},
+  {n:"Kumar A.", t:"svc", x:"Andy is very professional. He knows the cars well, is friendly, reliable, and offers really good prices. He also looks after his clients well."},
+  {n:"Elaria A.", t:"pink", x:"Let me come in for a last minute pink slip before they closed up! So helpful!"},
+  {n:"Nikhil C.", t:"pink", x:"Making an appointment was really easy. Pink slip tests done in a timely and efficient manner. That's 5 stars from me."},
+  {n:"Byasish D.", t:"svc", x:"The staff were very professional, friendly and helpful throughout the process. The service was quick and efficient, and everything was handled smoothly without any unnecessary delays."},
+  {n:"Rajin G.", t:"blue", x:"Amazing service. Received blue slip very fast and friendly."},
+  {n:"Muhammad A.", t:"svc", x:"I like their service, on time, reliable and price friendly. Highly recommended."},
+  {n:"Sheela S.", t:"pink", x:"Did pink slip here. Great service. Friendly. Highly recommended."},
+  {n:"Ashutosh T.", t:"blue", x:"I got a blue slip here — very helpful staff and convenient, very smooth experience. Recommend to everyone."},
+  {n:"Jantrarat T.", t:"svc", x:"Absolutely recommended. Service was so amazing. Professional, fair price and job done super quick!!"},
+  {n:"Melissa R.", t:"pink", x:"Did my pink slip same day!"},
+  {n:"Shruti K.", t:"blue", x:"Andy is outstanding in customer service. We came here for our blue slip and he assisted us. Cleared our car and the process was easy."},
+  {n:"Wang M.", t:"svc", x:"The owner of this shop is wonderful, very sincere, the prices are very reasonable, and the service is attentive and warm. Excellent! 👍"}
+];
