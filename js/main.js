@@ -229,7 +229,7 @@
   }
 
   /* ---------- reviews ---------- */
-  const COLORS = ['#FF4FA3', '#38A6FF', '#7E8EF0', '#C470D6', '#2BB5A0', '#F08A3C', '#4F6BFF', '#E0457B'];
+  const COLORS = ['#E9A400', '#2F8CFF', '#2BB5A0', '#F08A3C', '#4F6BFF', '#6C7A96', '#D9822B', '#1F9D8B'];
   const initials = n => n.replace(/[^A-Za-zÀ-ž .]/g, '').split(/[ .]+/).filter(Boolean).slice(0, 2).map(w => w[0].toUpperCase()).join('') || '★';
   const color = n => COLORS[[...n].reduce((a, c) => a + c.charCodeAt(0), 0) % COLORS.length];
   const STARS = '<svg><use href="#i-star"/></svg>'.repeat(5);

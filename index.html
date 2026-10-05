@@ -9,7 +9,7 @@
 <meta property="og:title" content="Car Station – GBC Mechanic Shop, Granville">
 <meta property="og:description" content="Fast, honest pink &amp; blue slip inspections and car servicing on Parramatta Rd. 5.0★ from 156 Google reviews.">
 <meta property="og:image" content="img/mechanic.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230A0E19'/%3E%3Cpath d='M14 40a18 18 0 0 1 36 0' fill='none' stroke='%23FF4FA3' stroke-width='6' stroke-linecap='round'/%3E%3Cpath d='M32 40 44 26' stroke='%2338A6FF' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='40' r='5' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3Cmask id='m' maskUnits='userSpaceOnUse' x='0' y='0' width='64' height='64'%3E%3Cg transform='rotate%2845 32 32%29'%3E%3Ccircle cx='32' cy='14' r='10.5' fill='%23fff'/%3E%3Crect x='28.3' y='18' width='7.4' height='28' rx='3.7' fill='%23fff'/%3E%3Ccircle cx='32' cy='50' r='7.6' fill='%23fff'/%3E%3Crect x='28.2' y='0' width='7.6' height='13' fill='%23000'/%3E%3Ccircle cx='32' cy='13' r='3.8' fill='%23000'/%3E%3Ccircle cx='32' cy='50' r='3.3' fill='%23000'/%3E%3C/g%3E%3C/mask%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23141B2D'/%3E%3Cpath d='M10 66 29 24M54 66 35 24' stroke='%2338A6FF' stroke-width='2.6'/%3E%3Crect width='64' height='64' fill='%23FFC531' mask='url%28%23m%29'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
 {
@@ -33,8 +33,26 @@
 <!-- ============ SVG ICON SPRITE (custom, drawn for this site) ============ -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
-    <linearGradient id="gPB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF4FA3"/><stop offset="1" stop-color="#38A6FF"/></linearGradient>
+    <linearGradient id="gPB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFC531"/><stop offset="1" stop-color="#FF9F1C"/></linearGradient>
+    <linearGradient id="gY" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD24D"/><stop offset="1" stop-color="#FF9F1C"/></linearGradient>
+    <mask id="wrenchMask" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <g transform="rotate(45 32 32)">
+        <circle cx="32" cy="14" r="10.5" fill="#fff"/><rect x="28.3" y="18" width="7.4" height="28" rx="3.7" fill="#fff"/><circle cx="32" cy="50" r="7.6" fill="#fff"/>
+        <rect x="28.2" y="0" width="7.6" height="13" fill="#000"/><circle cx="32" cy="13" r="3.8" fill="#000"/><circle cx="32" cy="50" r="3.3" fill="#000"/>
+      </g>
+    </mask>
+    <clipPath id="logoClip"><rect width="64" height="64" rx="18"/></clipPath>
   </defs>
+  <!-- logo: a wrench over a railway track running to the horizon = "Car Station" -->
+  <symbol id="logo" viewBox="0 0 64 64">
+    <rect width="64" height="64" rx="18" fill="#141B2D"/>
+    <rect x="1" y="1" width="62" height="62" rx="17" fill="none" stroke="#FFC531" stroke-opacity=".35" stroke-width="2"/>
+    <g clip-path="url(#logoClip)" stroke="#38A6FF" stroke-linecap="round" fill="none">
+      <path d="M10 66 29 24M54 66 35 24" stroke-width="2.4"/>
+      <path d="M15.5 54h33M19.8 44.5h24.4M23.2 37h17.6M25.8 31.3h12.4" stroke-width="2" opacity=".6"/>
+    </g>
+    <rect width="64" height="64" fill="url(#gY)" mask="url(#wrenchMask)"/>
+  </symbol>
   <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
   <symbol id="i-arrow-l" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
@@ -55,18 +73,18 @@
   <!-- service icons: two-tone line art -->
   <symbol id="s-pink" viewBox="0 0 32 32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect x="7" y="4" width="18" height="24" rx="3" stroke="#FF4FA3"/><path d="M11 10h10M11 14h10M11 18h5" stroke="#FFC9E2"/><circle cx="21.5" cy="22.5" r="4.5" fill="#0A0E19" stroke="#FF4FA3"/><path d="m19.6 22.6 1.3 1.3 2.4-2.6" stroke="#fff"/></symbol>
   <symbol id="s-blue" viewBox="0 0 32 32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect x="7" y="4" width="18" height="24" rx="3" stroke="#38A6FF"/><path d="M11 10h10M11 14h7" stroke="#BFE2FF"/><circle cx="16" cy="21" r="3.5" stroke="#38A6FF"/><path d="m18.5 23.5 2.5 2.5" stroke="#fff"/></symbol>
-  <symbol id="s-oil" viewBox="0 0 32 32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 14h14l4-3 6 1-6 4v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" stroke="#FF4FA3"/><path d="M9 14v-3h5v3" stroke="#FFC9E2"/><path d="M27 18c0 1.7-1 3-2 3s-2-1.3-2-3 2-4 2-4 2 2.3 2 4z" stroke="#fff"/></symbol>
+  <symbol id="s-oil" viewBox="0 0 32 32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 14h14l4-3 6 1-6 4v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" stroke="#FFC531"/><path d="M9 14v-3h5v3" stroke="#FFE7A3"/><path d="M27 18c0 1.7-1 3-2 3s-2-1.3-2-3 2-4 2-4 2 2.3 2 4z" stroke="#fff"/></symbol>
   <symbol id="s-tyre" viewBox="0 0 32 32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="16" cy="16" r="12" stroke="#38A6FF"/><circle cx="16" cy="16" r="5" stroke="#fff"/><path d="M16 4v4M16 24v4M4 16h4M24 16h4M7.5 7.5l2.8 2.8M21.7 21.7l2.8 2.8M7.5 24.5l2.8-2.8M21.7 10.3l2.8-2.8" stroke="#BFE2FF"/></symbol>
-  <symbol id="s-battery" viewBox="0 0 32 32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect x="4" y="9" width="24" height="17" rx="3" stroke="#FF4FA3"/><path d="M9 9V6h4v3M19 9V6h4v3" stroke="#FFC9E2"/><path d="M9 17h4M11 15v4M19 17h4" stroke="#fff"/></symbol>
+  <symbol id="s-battery" viewBox="0 0 32 32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect x="4" y="9" width="24" height="17" rx="3" stroke="#FFC531"/><path d="M9 9V6h4v3M19 9V6h4v3" stroke="#FFE7A3"/><path d="M9 17h4M11 15v4M19 17h4" stroke="#fff"/></symbol>
   <symbol id="s-brake" viewBox="0 0 32 32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="15" cy="17" r="10" stroke="#38A6FF"/><circle cx="15" cy="17" r="3" stroke="#BFE2FF"/><path d="M22 6a12 12 0 0 1 5 7l-5 2a7 7 0 0 0-3-4z" stroke="#fff" fill="#0A0E19"/></symbol>
-  <symbol id="s-diag" viewBox="0 0 32 32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect x="3" y="6" width="26" height="17" rx="3" stroke="#FF4FA3"/><path d="M7 16h4l2-5 3 9 2-4h7" stroke="#fff"/><path d="M12 27h8M16 23v4" stroke="#FFC9E2"/></symbol>
+  <symbol id="s-diag" viewBox="0 0 32 32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect x="3" y="6" width="26" height="17" rx="3" stroke="#FFC531"/><path d="M7 16h4l2-5 3 9 2-4h7" stroke="#fff"/><path d="M12 27h8M16 23v4" stroke="#FFE7A3"/></symbol>
   <symbol id="s-light" viewBox="0 0 32 32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 7c-6 0-10 4-10 9s4 9 10 9c2 0 3-4 3-9s-1-9-3-9z" stroke="#38A6FF"/><path d="M22 10h6M22 16h6M22 22h6" stroke="#fff"/><path d="M9 13c1-2 2.5-3 4-3" stroke="#BFE2FF"/></symbol>
-  <symbol id="s-wrench" viewBox="0 0 32 32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20 4a6 6 0 0 0-5.6 8.1L5 21.5 10.5 27l9.4-9.4A6 6 0 0 0 28 12l-3.5 3.5-4-4L24 8a6 6 0 0 0-4-4z" stroke="#FF4FA3"/><circle cx="8.2" cy="23.8" r="1" fill="#fff" stroke="none"/></symbol>
+  <symbol id="s-wrench" viewBox="0 0 32 32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20 4a6 6 0 0 0-5.6 8.1L5 21.5 10.5 27l9.4-9.4A6 6 0 0 0 28 12l-3.5 3.5-4-4L24 8a6 6 0 0 0-4-4z" stroke="#FFC531"/><circle cx="8.2" cy="23.8" r="1" fill="#fff" stroke="none"/></symbol>
 
   <!-- why icons -->
-  <symbol id="w-honest" viewBox="0 0 28 28" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14 3 5 6.5v6.2c0 5.6 3.8 10.4 9 12.3 5.2-1.9 9-6.7 9-12.3V6.5z" stroke="#FF4FA3"/><path d="m10 14 3 3 5.5-6" stroke="#fff"/></symbol>
+  <symbol id="w-honest" viewBox="0 0 28 28" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14 3 5 6.5v6.2c0 5.6 3.8 10.4 9 12.3 5.2-1.9 9-6.7 9-12.3V6.5z" stroke="#FFC531"/><path d="m10 14 3 3 5.5-6" stroke="#fff"/></symbol>
   <symbol id="w-explain" viewBox="0 0 28 28" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 6h14v10H9l-5 4z" stroke="#38A6FF"/><path d="M21 10h3v10l-3-2h-6v-2" stroke="#fff"/></symbol>
-  <symbol id="w-fast" viewBox="0 0 28 28" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="15" cy="15" r="9" stroke="#FF4FA3"/><path d="M15 10v5l3 2M3 9h4M2 14h3M3 19h4" stroke="#fff"/></symbol>
+  <symbol id="w-fast" viewBox="0 0 28 28" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="15" cy="15" r="9" stroke="#FFC531"/><path d="M15 10v5l3 2M3 9h4M2 14h3M3 19h4" stroke="#fff"/></symbol>
   <symbol id="w-price" viewBox="0 0 28 28" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 13V5a1 1 0 0 1 1-1h8l11 11-9 9z" stroke="#38A6FF"/><circle cx="9" cy="9" r="1.6" stroke="#fff"/><path d="M13 17l4-4" stroke="#fff"/></symbol>
 </svg>
 
@@ -77,14 +95,7 @@
 <header class="header" id="top">
   <div class="wrap header__in">
     <a href="#top" class="logo" aria-label="Car Station – GBC Mechanic Shop, back to top">
-      <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true">
-        <rect width="64" height="64" rx="18" fill="#141B2D"/>
-        <rect x="1" y="1" width="62" height="62" rx="17" fill="none" stroke="url(#gPB)" stroke-opacity=".6" stroke-width="2"/>
-        <path d="M14 41a18 18 0 0 1 36 0" fill="none" stroke="#FF4FA3" stroke-width="5" stroke-linecap="round"/>
-        <path d="M14 41a18 18 0 0 1 9-15.6" fill="none" stroke="#38A6FF" stroke-width="5" stroke-linecap="round"/>
-        <path d="M32 41 43 28" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
-        <circle cx="32" cy="41" r="4.5" fill="#fff"/>
-      </svg>
+      <svg class="logo__mark" aria-hidden="true"><use href="#logo"/></svg>
       <span class="logo__text">
         <span class="logo__name">Car Station</span>
         <span class="logo__sub">GBC Mechanic · Granville</span>
@@ -127,7 +138,7 @@
     <img src="img/mechanic.jpg" alt="" data-parallax="0.15" fetchpriority="high">
   </div>
   <svg class="hero__rails" viewBox="0 0 1440 180" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0 120 C 360 60, 720 170, 1440 90" fill="none" stroke="#FF4FA3" stroke-width="2"/>
+    <path d="M0 120 C 360 60, 720 170, 1440 90" fill="none" stroke="#FFC531" stroke-width="2"/>
     <path d="M0 150 C 420 90, 760 200, 1440 120" fill="none" stroke="#38A6FF" stroke-width="2"/>
   </svg>
 
@@ -282,26 +293,22 @@
         <span class="svc__no">03</span>
         <div class="svc__icon"><svg><use href="#s-oil"/></svg></div>
         <h3>Oil change &amp; servicing</h3>
-        <p>Regular servicing and oil changes with honest maintenance tips while you're here.</p>
+        <p>Regular servicing and oil changes, with honest maintenance tips while you're here.</p>
         <span class="svc__tag">All makes</span>
       </article>
       <article class="svc reveal" style="--d:.24s" data-tilt>
         <span class="svc__no">04</span>
+        <div class="svc__icon"><svg><use href="#s-diag"/></svg></div>
+        <h3>Diagnostics &amp; repairs</h3>
+        <p>We find the real problem quickly, quote a fair price and fix only what's needed&nbsp;— no upselling.</p>
+        <span class="svc__tag">Honest quotes</span>
+      </article>
+      <article class="svc reveal" data-tilt>
+        <span class="svc__no">05</span>
         <div class="svc__icon"><svg><use href="#s-tyre"/></svg></div>
         <h3>Tyres</h3>
         <p>Worn tyre? We'll show you, replace it and get your inspection finished in one visit.</p>
         <span class="svc__tag">On site</span>
-      </article>
-
-      <article class="svc svc--wide reveal" data-tilt>
-        <div class="svc__body">
-          <span class="svc__no">05</span>
-          <div class="svc__icon"><svg><use href="#s-diag"/></svg></div>
-          <h3>Diagnostics &amp; mechanical repairs</h3>
-          <p>We find the real problem quickly, quote a fair price and fix only what's needed&nbsp;— no upselling.</p>
-          <span class="svc__tag">Honest quotes</span>
-        </div>
-        <div class="svc__img"><img src="img/mechanic.jpg" alt="Mechanic working under the bonnet of a car at Car Station" loading="lazy"></div>
       </article>
       <article class="svc reveal" style="--d:.08s" data-tilt>
         <span class="svc__no">06</span>
@@ -317,30 +324,12 @@
         <p>Pads and brake work done properly&nbsp;— even when a stubborn piston needs extra time.</p>
         <span class="svc__tag">Done right</span>
       </article>
-
-      <article class="svc reveal" data-tilt>
+      <article class="svc reveal" style="--d:.24s" data-tilt>
         <span class="svc__no">08</span>
         <div class="svc__icon"><svg><use href="#s-light"/></svg></div>
-        <h3>Headlight restoration</h3>
-        <p>Yellowed, foggy headlights cleaned up for a small fee&nbsp;— brighter and inspection-ready.</p>
-        <span class="svc__tag">Small fee</span>
-      </article>
-      <article class="svc reveal" style="--d:.08s" data-tilt>
-        <span class="svc__no">09</span>
-        <div class="svc__icon"><svg><use href="#s-wrench"/></svg></div>
-        <h3>Small fixes &amp; extras</h3>
-        <p>Wiper blades, globes and the little things that stop a car passing&nbsp;— sorted on the spot.</p>
+        <h3>Headlights &amp; small fixes</h3>
+        <p>Foggy headlights restored, wiper blades, globes&nbsp;— the little things that stop a car passing, sorted on the spot.</p>
         <span class="svc__tag">While you wait</span>
-      </article>
-      <article class="svc svc--wide reveal" style="--d:.16s" data-tilt>
-        <div class="svc__body">
-          <span class="svc__no">10</span>
-          <div class="svc__icon"><svg><use href="#s-blue"/></svg></div>
-          <h3>Buying a car? Ask&nbsp;Andy</h3>
-          <p>Customers come to Andy for honest advice before and after buying a car&nbsp;— and for help with the rego paperwork that follows.</p>
-          <span class="svc__tag">Straight answers</span>
-        </div>
-        <div class="svc__img"><img src="img/yard.jpg" alt="Cars parked in the yard at 225 Parramatta Road, Granville" loading="lazy"></div>
       </article>
     </div>
 
@@ -396,9 +385,9 @@
         <div class="about__photo"><img src="img/workshop.jpg" alt="Inside the Car Station workshop with vehicle hoist" loading="lazy" data-parallax="0.08"></div>
         <svg class="about__sticker" viewBox="0 0 120 120" aria-hidden="true">
           <defs><path id="circ" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs>
-          <circle cx="60" cy="60" r="58" fill="#FF4FA3"/>
-          <text font-family="JetBrains Mono, monospace" font-size="10.5" font-weight="600" letter-spacing="2.4" fill="#fff"><textPath href="#circ">LOCAL · FAMILY-RUN · GRANVILLE · HONEST ·</textPath></text>
-          <path d="M44 66a16 16 0 0 1 32 0" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M60 66 70 54" stroke="#0A0E19" stroke-width="4" stroke-linecap="round"/><circle cx="60" cy="66" r="4" fill="#0A0E19"/>
+          <circle cx="60" cy="60" r="58" fill="#FFC531"/>
+          <text font-family="JetBrains Mono, monospace" font-size="10.5" font-weight="600" letter-spacing="2.4" fill="#0A0E19"><textPath href="#circ">LOCAL · FAMILY-RUN · GRANVILLE · HONEST ·</textPath></text>
+          <rect x="0" y="0" width="64" height="64" fill="#0A0E19" mask="url(#wrenchMask)" transform="translate(41 41) scale(.6)"/>
         </svg>
         <div class="about__badge">
           <b>5.0</b>
@@ -410,7 +399,7 @@
       <div class="about__text">
         <span class="kicker reveal">About us</span>
         <h2 class="sec-title" data-split>A local, family-run workshop that does it properly.</h2>
-        <p class="reveal">Car Station&nbsp;— GBC Mechanic Shop is a small team led by Andy, right on Parramatta Road in Granville. People come for a quick pink or blue slip and stay for the way they're treated: straight answers, fair prices and a mechanic who'll take you out the back to show you exactly what's going on.</p>
+        <p class="reveal">Car Station&nbsp;— GBC Mechanic Shop is a small team led by Andy, right on Parramatta Road in Granville. People come for a quick pink or blue slip and stay for the way they're treated: straight answers, fair prices and a mechanic who'll take you out the back to show you exactly what's going on. Thinking of buying a car? Customers ask Andy for honest advice&nbsp;— and help with the rego steps that follow.</p>
         <div class="why">
           <div class="why__item reveal"><svg><use href="#w-honest"/></svg><h3>Honest, no upsell</h3><p>We fix what's needed&nbsp;— nothing more.</p><q>Didn't try to upsell me on unnecessary fixes.</q></div>
           <div class="why__item reveal" style="--d:.08s"><svg><use href="#w-explain"/></svg><h3>Explained clearly</h3><p>You'll understand your car before you pay.</p><q>Explained everything clearly before doing the work.</q></div>
@@ -603,7 +592,7 @@
     <div class="footer__grid">
       <div>
         <a href="#top" class="logo" aria-label="Back to top">
-          <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="18" fill="#141B2D"/><path d="M14 41a18 18 0 0 1 36 0" fill="none" stroke="#FF4FA3" stroke-width="5" stroke-linecap="round"/><path d="M14 41a18 18 0 0 1 9-15.6" fill="none" stroke="#38A6FF" stroke-width="5" stroke-linecap="round"/><path d="M32 41 43 28" stroke="#fff" stroke-width="4" stroke-linecap="round"/><circle cx="32" cy="41" r="4.5" fill="#fff"/></svg>
+          <svg class="logo__mark" aria-hidden="true"><use href="#logo"/></svg>
           <span class="logo__text"><span class="logo__name">Car Station</span><span class="logo__sub">GBC Mechanic · Granville</span></span>
         </a>
         <p class="footer__about">Pink slips, blue slips, servicing and repairs on Parramatta Road, Granville. Local, family-run and rated 5.0 on Google.</p>
