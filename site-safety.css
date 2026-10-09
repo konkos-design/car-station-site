@@ -1,0 +1,7 @@
+/* Progressive enhancement: animation must never hide essential content on failure. */
+html:not(.enhancements-ready) :is([data-reveal], .reveal, .rv-up, .rv, [data-split], .split .w > span, .split-words .w > span, .rv-clip, .img-reveal) {opacity:1!important;visibility:visible!important;transform:none!important;clip-path:none!important;filter:none!important;}
+@media(prefers-reduced-motion:reduce){
+ :is([data-reveal], .reveal, .rv-up, .rv, [data-split], .split .w > span, .split-words .w > span, .rv-clip, .img-reveal){opacity:1!important;visibility:visible!important;transform:none!important;clip-path:none!important;filter:none!important;animation:none!important;transition:none!important;}
+ html{scroll-behavior:auto!important;}
+}
+:focus-visible{outline:3px solid currentColor;outline-offset:5px;}

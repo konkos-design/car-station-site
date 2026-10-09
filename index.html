@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en-AU">
 <head>
+<script src="site-safety.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Car Station – GBC Mechanic Shop | Pink &amp; Blue Slips in Granville NSW</title>
@@ -29,7 +30,7 @@
   <meta property="og:site_name" content="Car Station – GBC Mechanic Shop">
   <meta property="og:title" content="Car Station – GBC Mechanic Shop, Granville">
   <meta property="og:description" content="Fast, honest pink &amp; blue slip inspections and car servicing on Parramatta Rd. 5.0★ from 156 Google reviews.">
-  <meta property="og:url" content="https://konkos-design.github.io/car-station-site/">
+  
   <meta property="og:image" content="https://konkos-design.github.io/car-station-site/img/og-preview.jpg">
   <meta property="og:image:secure_url" content="https://konkos-design.github.io/car-station-site/img/og-preview.jpg">
   <meta property="og:image:type" content="image/jpeg">
@@ -43,6 +44,9 @@
   <meta name="twitter:image" content="https://konkos-design.github.io/car-station-site/img/og-preview.jpg">
   <!-- Demo version: hidden from Google. Remove this line once the site is sold and live on the client's domain -->
   <meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://konkos-design.github.io/car-station-site/">
+<meta property="og:url" content="https://konkos-design.github.io/car-station-site/">
+<link rel="stylesheet" href="site-safety.css">
 </head>
 <body>
 
@@ -125,7 +129,6 @@
       <a href="#visit">Visit</a>
     </nav>
     <div class="header__cta">
-      <a href="#book" class="btn btn--ghost btn--sm" data-magnetic>Book online</a>
       <a href="tel:+61401194604" class="btn btn--pink btn--sm" data-magnetic><svg><use href="#i-phone"/></svg><span>0401 194 604</span></a>
       <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
     </div>
@@ -139,7 +142,6 @@
     <a href="#about"><small>03</small>About</a>
     <a href="#reviews"><small>04</small>Reviews</a>
     <a href="#visit"><small>05</small>Visit us</a>
-    <a href="#book"><small>06</small>Book online</a>
   </nav>
   <div class="mobile-menu__foot">
     <a href="tel:+61401194604" class="btn btn--pink"><svg><use href="#i-phone"/></svg>Call 0401 194 604</a>
@@ -169,7 +171,7 @@
       <p class="hero__lead">Fast, honest vehicle inspections and everyday mechanical work on Parramatta&nbsp;Road. Call ahead and Andy's team will fit you in&nbsp;— often the same day, Saturdays included.</p>
       <div class="hero__actions">
         <a href="tel:+61401194604" class="btn btn--pink" data-magnetic><svg><use href="#i-phone"/></svg>Call 0401 194 604</a>
-        <a href="#book" class="btn btn--ghost" data-magnetic>Request a booking<svg><use href="#i-arrow"/></svg></a>
+        <a href="#visit" class="btn btn--ghost" data-magnetic>Visit the workshop<svg><use href="#i-arrow"/></svg></a>
       </div>
       <div class="hero__trust">
         <span class="trust-g"><svg width="22" height="22"><use href="#i-google"/></svg><strong>5.0</strong><span class="stars" aria-hidden="true">★★★★★</span></span>
@@ -426,9 +428,9 @@
     </div>
 
     <div class="stats reveal">
-      <div class="stat"><b><span data-count="5" data-decimals="1">0</span>★</b><span>Google rating</span></div>
-      <div class="stat"><b><span data-count="156">0</span></b><span>Google reviews</span></div>
-      <div class="stat"><b><span data-count="6">0</span></b><span>Days a week</span></div>
+      <div class="stat"><b><span data-count="5" data-decimals="1">5</span>★</b><span>Google rating</span></div>
+      <div class="stat"><b><span data-count="156">156</span></b><span>Google reviews</span></div>
+      <div class="stat"><b><span data-count="6">6</span></b><span>Days a week</span></div>
       <div class="stat"><b>9–4</b><span>Open Saturdays</span></div>
     </div>
   </div>
@@ -546,57 +548,6 @@
       </div>
     </div>
 
-    <div class="book" id="book">
-      <div class="book__intro">
-        <span class="kicker reveal">Book online</span>
-        <h2 class="sec-title" data-split>Request your slot.</h2>
-        <p class="reveal">Fill in the details and send them straight to Andy as a text message. We'll confirm a time with you. In a hurry? Calling is the fastest way.</p>
-        <ul class="reveal">
-          <li><svg><use href="#i-check"/></svg>Pink &amp; blue slips, Monday to Saturday</li>
-          <li><svg><use href="#i-check"/></svg>Last-minute requests welcome</li>
-          <li><svg><use href="#i-check"/></svg>Your details go only to our phone</li>
-        </ul>
-      </div>
-
-      <form class="form reveal" style="--d:.1s" id="bookForm" novalidate>
-        <div class="field">
-          <label for="f-name">Your name</label>
-          <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="e.g. Sam">
-          <span class="err">Please enter your name</span>
-        </div>
-        <div class="field">
-          <label for="f-phone">Phone</label>
-          <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="04xx xxx xxx">
-          <span class="err">Please enter a valid phone number</span>
-        </div>
-        <div class="field field--full">
-          <span class="field__label" style="font-size:.82rem;font-weight:600;color:#3A4152">What do you need?</span>
-          <div class="seg" role="radiogroup" aria-label="Service">
-            <input type="radio" name="service" id="sv1" value="Pink slip" checked><label for="sv1">Pink slip</label>
-            <input type="radio" name="service" id="sv2" value="Blue slip"><label for="sv2">Blue slip</label>
-            <input type="radio" name="service" id="sv3" value="Oil change / service"><label for="sv3">Service</label>
-            <input type="radio" name="service" id="sv4" value="Repair / diagnosis"><label for="sv4">Repair</label>
-            <input type="radio" name="service" id="sv5" value="Tyres / battery"><label for="sv5">Tyres / battery</label>
-          </div>
-        </div>
-        <div class="field">
-          <label for="f-car">Car (make &amp; model)</label>
-          <input id="f-car" name="car" type="text" placeholder="e.g. Toyota Corolla 2014">
-        </div>
-        <div class="field">
-          <label for="f-day">Preferred day</label>
-          <select id="f-day" name="day"></select>
-        </div>
-        <div class="field field--full">
-          <label for="f-msg">Anything else? <span style="font-weight:400;color:#7A8193">(optional)</span></label>
-          <textarea id="f-msg" name="msg" placeholder="Rego, preferred time, what's wrong with the car…"></textarea>
-        </div>
-        <div class="form__foot">
-          <small>Sending opens your messaging app with everything pre-filled&nbsp;— just press send.</small>
-          <button type="submit" class="btn btn--dark" data-magnetic><svg><use href="#i-msg"/></svg>Send request</button>
-        </div>
-      </form>
-    </div>
   </div>
 </section>
 </main>
@@ -636,7 +587,7 @@
 <!-- floating elements -->
 <div class="dock" id="dock">
   <a href="tel:+61401194604" class="btn btn--pink"><svg><use href="#i-phone"/></svg>Call</a>
-  <a href="#book" class="btn btn--ghost">Book</a>
+  <a href="https://www.google.com/maps/dir/?api=1&destination=Car+Station+GBC+mechanic+shop+225+Parramatta+Rd+Granville+NSW+2142" target="_blank" rel="noopener" class="btn btn--ghost"><svg><use href="#i-dir"/></svg>Directions</a>
 </div>
 <a href="#top" class="to-top" id="toTop" aria-label="Back to top"><svg><use href="#i-up"/></svg></a>
 
@@ -648,19 +599,6 @@
   <button class="lightbox__btn lightbox__next" id="lbNext" aria-label="Next photo"><svg><use href="#i-arrow"/></svg></button>
 </div>
 
-<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-  <div class="modal__box">
-    <svg class="check-anim" viewBox="0 0 64 64" fill="none" aria-hidden="true"><circle cx="32" cy="32" r="29" stroke="url(#gPB)" stroke-width="4"/><path d="m21 33 8 8 15-17" stroke="#141824" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    <h3 id="modalTitle">Almost done!</h3>
-    <p>Your message is ready. Send it by text to <strong>0401 194 604</strong>, or copy it and call us.</p>
-    <div class="modal__msg" id="modalMsg"></div>
-    <div class="modal__actions">
-      <a class="btn btn--pink" id="smsBtn" href="#"><svg><use href="#i-msg"/></svg>Open text message</a>
-      <button class="btn btn--outline-dark" id="copyBtn"><svg><use href="#i-copy"/></svg><span>Copy text</span></button>
-      <button class="btn btn--outline-dark" id="modalClose">Close</button>
-    </div>
-  </div>
-</div>
 
 <script src="js/reviews.js"></script>
 <script src="js/main.js"></script>
